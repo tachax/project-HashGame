@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <div id="telaLogin" class="telaLogin">
+        <h3>Para iniciar o jogo, insira seu login:</h3>
+        <input id="usuario" type="text" placeholder="usuário">
+        <input id="senha" type="password" placeholder="senha">
+        <button onclick="fazerLogin()">Enter</button>
+    </div>
+
+    <div id="areaJogo" class="areaJogo">
+        <audio id="audio" src="" autoplay></audio>
+        <h3 id="rodada">Rodada 1</h3>
+        <div class="placarJogadores">
+            <div class="players">
+                <div>
+                    <h2>Natacha</h2>
+                    <h3 id="pontosJog">Pontos: 0</h3>
+                    <p>Joga com X</p>
+                </div>
+
+                <div>
+                    <h2>CPU</h2>
+                    <h3 id="pontosCPU">Pontos: 0</h3>
+                    <p>Joga com O</p>
+                </div>
+            </div>
+
+            <h4 id="mensagemVencedor"></h4>
+        </div>
+
+        <div id="jogadas" class="jogadas">
+            <img class="tabuleiro"
+                src="tabuleiro.jpg">
+            <button id="bot1" onclick="fazerJogada1()">
+                <img id="botIm1" class="bot1"
+                    src="botaoZerado.png"></button>
+            <button id="bot2" onclick="fazerJogada2()"><img id="botIm2" class="bot2"
+                    src="botaoZerado.png"></button>
+            <button id="bot3" onclick="fazerJogada3()"><img id="botIm3" class="bot3"
+                    src="botaoZerado.png"></button>
+            <button id="bot4" onclick="fazerJogada4()"><img id="botIm4" class="bot4"
+                    src="botaoZerado.png"></button>
+            <button id="bot5" onclick="fazerJogada5()"><img id="botIm5" class="bot5"
+                    src="botaoZerado.png"></button>
+            <button id="bot6" onclick="fazerJogada6()"><img id="botIm6" class="bot6"
+                    src="botaoZerado.png"></button>
+            <button id="bot7" onclick="fazerJogada7()"><img id="botIm7" class="bot7"
+                    src="botaoZerado.png"></button>
+            <button id="bot8" onclick="fazerJogada8()"><img id="botIm8" class="bot8"
+                    src="botaoZerado.png"></button>
+            <button id="bot9" onclick="fazerJogada9()"><img id="botIm9" class="bot9"
+                    src="botaoZerado.png"></button>
+        </div>
+
+        <div id="painelVencedor" class="painelVencedor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7w4sAK_eMSY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

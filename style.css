@@ -1,0 +1,176 @@
+*{
+  margin: 0; 
+  padding: 0; 
+ } 
+
+body {
+  background: rgb(221, 217, 217);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Cambria';
+}
+
+h1 {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(129, 132, 139); 
+}
+
+.telaLogin {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(69, 69, 158);
+}
+
+.telaLogin input {
+    max-width: 200px;
+    min-height: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.telaLogin button {
+    font-size: 16px;
+    padding: 6px;
+    cursor: pointer;
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+    background: whitesmoke;
+    border: solid 3px black;
+    color: black;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.areaJogo {
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.placarJogadores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(69, 69, 158);
+    margin: auto;
+    padding: 10px;
+    row-gap: 25px;
+    border-radius: 10px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 200px;
+}
+
+.jogadas{
+    margin: auto;
+}
+
+.tabuleiro {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.jogadas button {
+  position: absolute;
+  cursor: pointer;
+  
+}
+
+.painelVencedor {
+    display: none;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.painelVencedor button {
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.bot1 {
+    margin-left: -670px; 
+    margin-top: 15px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot2 {
+    margin-left: -400px; 
+    margin-top: 15px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot3 {
+    margin-left: -140px; 
+    margin-top: 15px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot4 {
+    margin-left: -670px; 
+    margin-top: 145px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot5 {
+    margin-left: -140px; 
+    margin-top: 145px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot6 {
+    margin-left: -400px; 
+    margin-top: 145px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot7 {
+    margin-left: -670px; 
+    margin-top: 280px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot8 {
+    margin-left: -400px; 
+    margin-top: 280px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bot9 {
+    margin-left: -140px; 
+    margin-top: 280px;
+    height: 100px;
+    border-radius: 50px;
+}
