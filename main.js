@@ -41,7 +41,7 @@ function fazerLogin() {
 }
 
 function fazerJogada1() {
-    document.getElementById('botIm1').src = "xis.png";
+    document.getElementById('botIm1').src = "imagens/xis.png";
     document.getElementById('bot1').disabled = true;
     document.getElementById('bot1').style.cursor = 'default';
     botaoJaJogado.push(0);
@@ -50,7 +50,7 @@ function fazerJogada1() {
     jogadaCPU();
 }
 function fazerJogada2() {
-    document.getElementById('botIm2').src = "xis.png";
+    document.getElementById('botIm2').src = "imagens/xis.png";
     document.getElementById('bot2').disabled = true;
     document.getElementById('bot2').style.cursor = 'default';
     botaoJaJogado.push(1);
@@ -59,7 +59,7 @@ function fazerJogada2() {
     jogadaCPU();
 }
 function fazerJogada3() {
-    document.getElementById('botIm3').src = "xis.png";
+    document.getElementById('botIm3').src = "imagens/xis.png";
     document.getElementById('bot3').disabled = true;
     document.getElementById('bot3').style.cursor = 'default';
     botaoJaJogado.push(2);
@@ -68,7 +68,7 @@ function fazerJogada3() {
     jogadaCPU();
 }
 function fazerJogada4() {
-    document.getElementById('botIm4').src = "xis.png";
+    document.getElementById('botIm4').src = "imagens/xis.png";
     document.getElementById('bot4').disabled = true;
     document.getElementById('bot4').style.cursor = 'default';
     botaoJaJogado.push(3);
@@ -77,7 +77,7 @@ function fazerJogada4() {
     jogadaCPU();
 }
 function fazerJogada5() {
-    document.getElementById('botIm5').src = "xis.png";
+    document.getElementById('botIm5').src = "imagens/xis.png";
     document.getElementById('bot5').disabled = true;
     document.getElementById('bot5').style.cursor = 'default';
     botaoJaJogado.push(4);
@@ -86,7 +86,7 @@ function fazerJogada5() {
     jogadaCPU();
 }
 function fazerJogada6() {
-    document.getElementById('botIm6').src = "xis.png";
+    document.getElementById('botIm6').src = "imagens/xis.png";
     document.getElementById('bot6').disabled = true;
     document.getElementById('bot6').style.cursor = 'default';
     botaoJaJogado.push(5);
@@ -95,7 +95,7 @@ function fazerJogada6() {
     jogadaCPU();
 }
 function fazerJogada7() {
-    document.getElementById('botIm7').src = "xis.png";
+    document.getElementById('botIm7').src = "imagens/xis.png";
     document.getElementById('bot7').disabled = true;
     document.getElementById('bot7').style.cursor = 'default';
     botaoJaJogado.push(6);
@@ -104,7 +104,7 @@ function fazerJogada7() {
     jogadaCPU();
 }
 function fazerJogada8() {
-    document.getElementById('botIm8').src = "xis.png";
+    document.getElementById('botIm8').src = "imagens/xis.png";
     document.getElementById('bot8').disabled = true;
     document.getElementById('bot8').style.cursor = 'default';
     botaoJaJogado.push(7);
@@ -113,7 +113,7 @@ function fazerJogada8() {
     jogadaCPU();
 }
 function fazerJogada9() {
-    document.getElementById('botIm9').src = "xis.png";
+    document.getElementById('botIm9').src = "imagens/xis.png";
     document.getElementById('bot9').disabled = true;
     document.getElementById('bot9').style.cursor = 'default';
     botaoJaJogado.push(8);
@@ -130,7 +130,7 @@ function jogadaCPU() {
 
     switch (escolhaCPU) {
         case 0:
-            document.getElementById('botIm1').src = "circulo.jpg";
+            document.getElementById('botIm1').src = "imagens/circulo.jpg";
             document.getElementById('bot1').disabled = true;
             document.getElementById('bot1').style.cursor = 'default';
             botaoJaJogado.push(0);
@@ -139,7 +139,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 1:
-            document.getElementById('botIm2').src = "circulo.jpg";
+            document.getElementById('botIm2').src = "imagens/circulo.jpg";
             document.getElementById('bot2').disabled = true;
             document.getElementById('bot2').style.cursor = 'default';
             botaoJaJogado.push(1);
@@ -148,7 +148,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 2:
-            document.getElementById('botIm3').src = "circulo.jpg";
+            document.getElementById('botIm3').src = "imagens/circulo.jpg";
             document.getElementById('bot3').disabled = true;
             document.getElementById('bot3').style.cursor = 'default';
             botaoJaJogado.push(2);
@@ -157,7 +157,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 3:
-            document.getElementById('botIm4').src = "circulo.jpg";
+            document.getElementById('botIm4').src = "imagens/circulo.jpg";
             document.getElementById('bot4').disabled = true;
             document.getElementById('bot4').style.cursor = 'default';
             botaoJaJogado.push(3);
@@ -166,7 +166,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 4:
-            document.getElementById('botIm5').src = "circulo.jpg";
+            document.getElementById('botIm5').src = "imagens/circulo.jpg";
             document.getElementById('bot5').disabled = true;
             document.getElementById('bot5').style.cursor = 'default';
             botaoJaJogado.push(4);
@@ -175,7 +175,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 5:
-            document.getElementById('botIm6').src = "circulo.jpg";
+            document.getElementById('botIm6').src = "imagens/circulo.jpg";
             document.getElementById('bot6').disabled = true;
             document.getElementById('bot6').style.cursor = 'default';
             botaoJaJogado.push(5);
@@ -184,7 +184,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 6:
-            document.getElementById('botIm7').src = "circulo.jpg";
+            document.getElementById('botIm7').src = "imagens/circulo.jpg";
             document.getElementById('bot7').disabled = true;
             document.getElementById('bot7').style.cursor = 'default';
             botaoJaJogado.push(6);
@@ -193,7 +193,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 7:
-            document.getElementById('botIm8').src = "circulo.jpg";
+            document.getElementById('botIm8').src = "imagens/circulo.jpg";
             document.getElementById('bot8').disabled = true;
             document.getElementById('bot8').style.cursor = 'default';
             botaoJaJogado.push(7);
@@ -202,7 +202,7 @@ function jogadaCPU() {
             vencedor();
             break;
         case 8:
-            document.getElementById('botIm9').src = "circulo.jpg";
+            document.getElementById('botIm9').src = "imagens/circulo.jpg";
             document.getElementById('bot9').disabled = true;
             document.getElementById('bot9').style.cursor = 'default';
             botaoJaJogado.push(8);
@@ -282,15 +282,15 @@ function vencedor() {
 
 
 function zerarJogo() {
-    document.getElementById('botIm1').src = "botaoZerado.png";
-    document.getElementById('botIm2').src = "botaoZerado.png";
-    document.getElementById('botIm3').src = "botaoZerado.png";
-    document.getElementById('botIm4').src = "botaoZerado.png";
-    document.getElementById('botIm5').src = "botaoZerado.png";
-    document.getElementById('botIm6').src = "botaoZerado.png";
-    document.getElementById('botIm7').src = "botaoZerado.png";
-    document.getElementById('botIm8').src = "botaoZerado.png";
-    document.getElementById('botIm9').src = "botaoZerado.png";
+    document.getElementById('botIm1').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm2').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm3').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm4').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm5').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm6').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm7').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm8').src = "imagens/botaoZerado.png";
+    document.getElementById('botIm9').src = "imagens/botaoZerado.png";
     document.getElementById('bot1').disabled = false;
     document.getElementById('bot2').disabled = false;
     document.getElementById('bot3').disabled = false;
