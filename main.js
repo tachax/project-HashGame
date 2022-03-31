@@ -123,7 +123,7 @@ function fazerJogada9() {
 }
 
 function jogadaCPU() {
-    let escolhaCPU = Math.floor(Math.random() * 9);
+    let escolhaCPU;
     do {
         escolhaCPU = Math.floor(Math.random() * 9);
     } while (botaoJaJogado.includes(escolhaCPU))
