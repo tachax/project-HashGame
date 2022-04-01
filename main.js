@@ -47,7 +47,7 @@ function fazerJogada1() {
     botaoJaJogado.push(0);
     im1 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada2() {
     document.getElementById('botIm2').src = "imagens/xis.png";
@@ -56,7 +56,7 @@ function fazerJogada2() {
     botaoJaJogado.push(1);
     im2 = 1
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada3() {
     document.getElementById('botIm3').src = "imagens/xis.png";
@@ -65,7 +65,7 @@ function fazerJogada3() {
     botaoJaJogado.push(2);
     im3 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada4() {
     document.getElementById('botIm4').src = "imagens/xis.png";
@@ -74,7 +74,7 @@ function fazerJogada4() {
     botaoJaJogado.push(3);
     im4 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada5() {
     document.getElementById('botIm5').src = "imagens/xis.png";
@@ -83,7 +83,7 @@ function fazerJogada5() {
     botaoJaJogado.push(4);
     im5 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada6() {
     document.getElementById('botIm6').src = "imagens/xis.png";
@@ -92,7 +92,7 @@ function fazerJogada6() {
     botaoJaJogado.push(5);
     im6 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada7() {
     document.getElementById('botIm7').src = "imagens/xis.png";
@@ -101,7 +101,7 @@ function fazerJogada7() {
     botaoJaJogado.push(6);
     im7 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada8() {
     document.getElementById('botIm8').src = "imagens/xis.png";
@@ -110,7 +110,7 @@ function fazerJogada8() {
     botaoJaJogado.push(7);
     im8 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 function fazerJogada9() {
     document.getElementById('botIm9').src = "imagens/xis.png";
@@ -119,7 +119,7 @@ function fazerJogada9() {
     botaoJaJogado.push(8);
     im9 = 1;
     empateJog++;
-    jogadaCPU();
+    setTimeout('jogadaCPU();',250);
 }
 
 function jogadaCPU() {
