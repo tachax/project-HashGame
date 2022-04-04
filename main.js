@@ -262,18 +262,21 @@ function vencedor() {
         zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
+        document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosJog == 3) {
         resultado = "PARTIDA ENCERRADA! Natacha venceu";
         document.getElementById('rodada').innerText = "";
         zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
+        document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosCPU == 3) {
         resultado = "PARTIDA ENCERRADA! CPU venceu";
         document.getElementById('rodada').innerText = "";
         zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
+        document.getElementById('video').src = "midia/SomAplausos.mp4";
     }
     document.getElementById('mensagemVencedor').innerText = resultado;
     document.getElementById('pontosJog').innerText = `Pontos: ${pontosJog}`;
