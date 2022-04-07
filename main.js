@@ -1,7 +1,3 @@
-/*
-JOGO DA VELHA
-*/
-
 let botaoJaJogado = [];
 let im1 = 0;
 let im2 = 0;
@@ -27,11 +23,13 @@ let rodada = 1;
 let empateJog =0;
 let empateCPU =0;
 
+//fazer o login
 function fazerLogin() {
     let usuario = document.getElementById('usuario').value;
     let senha = document.getElementById('senha').value;
 
-    if (usuario == 'natacha' && senha == 'cesupa') {
+    //verifica se os dados inseridos estão corretor
+    if (usuario == 'querojogar' && senha == 'vouvencer') {
         document.getElementById('areaJogo').style.display = 'flex';
         document.getElementById('telaLogin').style.display = 'none';
         document.getElementById('audio').src = "midia/AlertClock20.mp3";
@@ -40,6 +38,7 @@ function fazerLogin() {
     }
 }
 
+//jogadas do player humano
 function fazerJogada1() {
     document.getElementById('botIm1').src = "imagens/xis.png";
     document.getElementById('bot1').disabled = true;
@@ -122,8 +121,11 @@ function fazerJogada9() {
     setTimeout('jogadaCPU();',250);
 }
 
+//jogadas do pc
 function jogadaCPU() {
     let escolhaCPU;
+
+    //verifica se o número sorteado é um botão que já foi jogado para impedir sobreposições
     do {
         escolhaCPU = Math.floor(Math.random() * 9);
     } while (botaoJaJogado.includes(escolhaCPU))
@@ -215,6 +217,7 @@ function jogadaCPU() {
     }
 }
 
+//verifica se houve vencedor nas rodadas/partida
 function vencedor() {
     let resultado = "";
 
@@ -259,21 +262,18 @@ function vencedor() {
     if (pontosJog == 3 && pontosCPU == 3) {
         resultado = "PARTIDA ENCERRADA! Natacha e CPU Empataram";
         document.getElementById('rodada').innerText = "";
-        zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosJog == 3) {
         resultado = "PARTIDA ENCERRADA! Natacha venceu";
         document.getElementById('rodada').innerText = "";
-        zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosCPU == 3) {
         resultado = "PARTIDA ENCERRADA! CPU venceu";
         document.getElementById('rodada').innerText = "";
-        zerarJogo();
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
@@ -283,7 +283,7 @@ function vencedor() {
     document.getElementById('pontosCPU').innerText = `Pontos: ${pontosCPU}`;
 }
 
-
+//zera todos os dados para cada partida
 function zerarJogo() {
     document.getElementById('botIm1').src = "imagens/botaoZerado.png";
     document.getElementById('botIm2').src = "imagens/botaoZerado.png";
