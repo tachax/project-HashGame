@@ -1,4 +1,4 @@
-# projeto-JogoDaVelha
+# project-HashGame
 Project of a game between human player and CPU. Made with HTML, CSS and Javascript. Code made in Portuguese, but user interfaces updated to English.
 
 <a href="https://jogoxdaxvelha.netlify.app/" target="_blank">Link to play</a>
