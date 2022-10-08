@@ -1,6 +1,6 @@
 # projeto-JogoDaVelha
-Projeto de Jogo da Velha entre player humano e cpu. Feito com HTML, CSS e Javascript.
+Project of a game between human player and CPU. Made with HTML, CSS and Javascript. Code made in Portuguese, but user interfaces updated to English.
 
-Imagem da Interface:
+Interface Images:
 <br>
-![interface](https://user-images.githubusercontent.com/98829238/165591120-c3fda41f-ceba-44b1-bb1c-7f48b2d621d4.jpg)
+![hash2](https://user-images.githubusercontent.com/98829238/194719151-e0080f28-b623-4178-aa07-ffec0fdc9dee.png)
