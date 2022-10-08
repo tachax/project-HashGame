@@ -29,7 +29,7 @@ function fazerLogin() {
     let senha = document.getElementById('senha').value;
 
     //verifica se os dados inseridos estão corretor
-    if (usuario == 'querojogar' && senha == 'vouvencer') {
+    if (usuario == 'play' && senha == 'win') {
         document.getElementById('areaJogo').style.display = 'flex';
         document.getElementById('telaLogin').style.display = 'none';
         document.getElementById('audio').src = "midia/AlertClock20.mp3";
@@ -229,10 +229,10 @@ function vencedor() {
         (im3 == 1 && im6 == 1 && im9 == 1) ||
         (im1 == 1 && im5 == 1 && im9 == 1) ||
         (im3 == 1 && im5 == 1 && im7 == 1)) {
-        resultado = `Natacha venceu a rodada ${rodada}!`;
+        resultado = `Natacha won the round ${rodada}!`;
         pontosJog++;
         rodada++;
-        document.getElementById('rodada').innerText = `Rodada ${rodada}`;
+        document.getElementById('rodada').innerText = `Round ${rodada}`;
         zerarJogo();
 
     } else if ((imPC1 == 1 && imPC2 == 1 && imPC3 == 1) ||
@@ -243,44 +243,44 @@ function vencedor() {
         (imPC3 == 1 && imPC6 == 1 && imPC9 == 1) ||
         (imPC1 == 1 && imPC5 == 1 && imPC9 == 1) ||
         (imPC3 == 1 && imPC5 == 1 && imPC7 == 1)) {
-        resultado = `CPU venceu a rodada ${rodada}!`;
+        resultado = `CPU won the round ${rodada}!`;
         pontosCPU++;
         rodada++;
-        document.getElementById('rodada').innerText = `Rodada ${rodada}`;
+        document.getElementById('rodada').innerText = `Round ${rodada}`;
         zerarJogo();
     }
 
     if (empateJog==4 && empateCPU==4) {
-        resultado = `A rodada ${rodada} EMPATOU`;
+        resultado = `Round ${rodada} TIED`;
         pontosJog++;
         pontosCPU++;
         rodada++;
-        document.getElementById('rodada').innerText = `Rodada ${rodada}`;
+        document.getElementById('rodada').innerText = `Round ${rodada}`;
         zerarJogo();
     }
 
     if (pontosJog == 3 && pontosCPU == 3) {
-        resultado = "PARTIDA ENCERRADA! Natacha e CPU Empataram";
+        resultado = "FINISHED! Natacha and CPU ied";
         document.getElementById('rodada').innerText = "";
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosJog == 3) {
-        resultado = "PARTIDA ENCERRADA! Natacha venceu";
+        resultado = "FINISHED! Natacha won";
         document.getElementById('rodada').innerText = "";
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
     } else if (pontosCPU == 3) {
-        resultado = "PARTIDA ENCERRADA! CPU venceu";
+        resultado = "FINISHED! CPU won";
         document.getElementById('rodada').innerText = "";
         document.getElementById('jogadas').style.display = 'none';
         document.getElementById('painelVencedor').style.display = 'flex';
         document.getElementById('video').src = "midia/SomAplausos.mp4";
     }
     document.getElementById('mensagemVencedor').innerText = resultado;
-    document.getElementById('pontosJog').innerText = `Pontos: ${pontosJog}`;
-    document.getElementById('pontosCPU').innerText = `Pontos: ${pontosCPU}`;
+    document.getElementById('pontosJog').innerText = `Points: ${pontosJog}`;
+    document.getElementById('pontosCPU').innerText = `Points: ${pontosCPU}`;
 }
 
 //zera todos os dados para cada partida
